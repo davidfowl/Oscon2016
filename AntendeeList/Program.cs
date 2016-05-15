@@ -12,7 +12,7 @@ namespace ConsoleApplication
                             .UseKestrel()
                             .UseStartup<Startup>()
                             .Build();
-
+            
             host.Run();
         }
     }
