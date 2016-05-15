@@ -1,7 +1,7 @@
 using System;
 using Microsoft.EntityFrameworkCore;
 
-namespace ConsoleApplication
+namespace AttendeeList
 {
     public class WorkshopContext : DbContext
     {

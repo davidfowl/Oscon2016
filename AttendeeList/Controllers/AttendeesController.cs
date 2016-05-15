@@ -4,7 +4,7 @@ using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 
-namespace ConsoleApplication
+namespace AttendeeList
 {
     [Route("/api/[controller]")]
     public class AttendeesController : Controller

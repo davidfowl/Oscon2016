@@ -1,6 +1,6 @@
 using System;
 
-namespace ConsoleApplication
+namespace AttendeeList
 {
     public class Attendee
     {

@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc.Formatters;
 
-namespace ConsoleApplication
+namespace AttendeeList
 {
     public class VCardFormatter : OutputFormatter
     {

@@ -3,7 +3,7 @@ using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.Extensions.Logging;
 
-namespace ConsoleApplication
+namespace AttendeeList
 {
     public class Program
     {
