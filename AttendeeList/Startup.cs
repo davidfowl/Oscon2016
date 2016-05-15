@@ -16,6 +16,8 @@ namespace AttendeeList
         
         public void Configure(IApplicationBuilder app)
         {
+            app.UseFileServer();
+
             app.UseMvc();
         }
     }

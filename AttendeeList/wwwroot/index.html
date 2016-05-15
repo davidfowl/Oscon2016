@@ -1,0 +1,31 @@
+<html>
+    <head>
+    </head>
+    <body>
+       <h1>Attendee List</h1>
+       
+       <ul id="attendees">
+       </ul>
+       
+       <script>
+          (function init() {
+              var xhr = new XMLHttpRequest();
+              xhr.open('GET', '/api/attendees', true)
+              xhr.send(null);
+              
+              xhr.onreadystatechange = function(e) {
+                  if (xhr.readyState === 4) {
+                      var obj = JSON.parse(xhr.responseText);
+                      var attendees = document.getElementById('attendees');
+                      for (var i = 0; i < obj.length; ++i)
+                      {
+                          var li = document.createElement('li');
+                          li.innerText = obj[i].FirstName + ' ' + obj[i].LastName + ' (' + obj[i].Company + ')';
+                          attendees.appendChild(li);
+                      }
+                  }
+              };
+          })();
+       </script>
+    </body>
+</html>
