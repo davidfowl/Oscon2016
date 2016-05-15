@@ -1,16 +1,23 @@
 using System;
 using System.Collections.Generic;
-using System.Linq;
+using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.EntityFrameworkCore;
 
 namespace ConsoleApplication
 {
     public class AtendeeController : Controller
     {
-        [HttpGet("/")]
-        public IEnumerable<Atendee> Get()
+        private readonly WorkshopContext _context;
+        public AtendeeController(WorkshopContext context)
         {
-            return Enumerable.Empty<Atendee>();
+            _context = context;
+        }
+
+        [HttpGet("/")]
+        public Task<List<Atendee>> Get()
+        {
+            return _context.Atendees.ToListAsync();
         }
     }
 }
