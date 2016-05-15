@@ -28,10 +28,16 @@ namespace ConsoleApplication
             return _context.SaveChangesAsync();
         }
         
-        [HttpDelete]
-        public void Delete(Atendee atendee)
+        [HttpDelete("{id}")]
+        public Task Delete(int id)
         {
-
+            var atendee = new Atendee
+            {
+                Id = id
+            };
+            _context.Attach(atendee);
+            _context.Remove(atendee);
+            return _context.SaveChangesAsync();
         }
     }
 }
