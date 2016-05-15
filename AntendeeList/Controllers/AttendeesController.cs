@@ -28,13 +28,15 @@ namespace ConsoleApplication
         }
 
         [HttpPost]
-        public Task Post([FromBody]Attendee atendee)
+        public async Task<IActionResult> Post([FromBody]Attendee atendee)
         {
             _context.Attendees.Add(atendee);
-            return _context.SaveChangesAsync();
+            await _context.SaveChangesAsync();
+            return CreatedAtAction("Get", new { id = atendee.Id }, atendee);
+
         }
         
-        [HttpDelete("{id}")]
+        [HttpDelete("{id:int}")]
         public Task Delete(int id)
         {
             var atendee = new Attendee
