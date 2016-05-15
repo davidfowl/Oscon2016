@@ -1,0 +1,37 @@
+- Acquire & install (Windows, OS X, VS, VS Code, etc.)
+  - .NET Core SDK
+  - VS Code
+  - OmniSharp plug-in
+  - VS2015 Update 2
+  - VS2015 tools Preview 1
+- Write our first app (Hello World of course!)
+  - mkdir -> dotnet new -> dotnet run
+  - dotnet ./output.dll
+  - demo use of dotnet build/run (e.g. change file, dotnet run, builds, etc.)
+- Turn it into Hello World web app
+  - Add kestrel package
+  - Use WebHostBuilder to boot with inline middleware to reply
+- Add console logging so we can see what we're doing set to debug level
+- Serve static files by adding pre-built middleware
+  - Add static files package
+  - Create wwwroot/hello.html
+- Add an API that returns an object
+  - Add MVC package
+  - Add MVC services
+  - Add MVC middleware
+  - Add Controllers/HelloController.cs
+  - Use POSTMAN to see it come back as JSON
+- Let's build an Attendee List app
+- Build our model: Models/Attendee.cs
+- Add EF for persistance
+   - Add EF in-memory package
+   - Add EF services
+   - Add Data/WorkshopContext.cs
+     - Add Attendee DbSet property
+- Add Controllers/AttendeesApiController.cs
+  - Add Get API
+  - Use POSTMAN to call it, no result yet
+  - Add Create API
+  - Use POSTMAN to call it, create record, then query it again
+- Use POSTMAN to use the API, create and see attendees
+- Let's add some UI to show and delete attendees
