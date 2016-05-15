@@ -1,7 +1,6 @@
 ﻿using System;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
-using Microsoft.AspNetCore.Http;
 
 namespace ConsoleApplication
 {
@@ -11,13 +10,7 @@ namespace ConsoleApplication
         {
             var host = new WebHostBuilder()
                             .UseKestrel()
-                            .Configure(app =>
-                            {
-                                app.Run(context =>
-                                {
-                                    return context.Response.WriteAsync("Hello World");
-                                });
-                            })
+                            .UseStartup<Startup>()
                             .Build();
 
             host.Run();
