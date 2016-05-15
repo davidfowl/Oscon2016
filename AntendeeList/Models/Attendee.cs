@@ -2,7 +2,7 @@ using System;
 
 namespace ConsoleApplication
 {
-    public class Atendee
+    public class Attendee
     {
         public int Id { get; set; }
         public string FirstName { get; set; }

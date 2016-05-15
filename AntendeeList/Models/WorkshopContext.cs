@@ -6,6 +6,6 @@ namespace ConsoleApplication
     public class WorkshopContext : DbContext
     {
         public WorkshopContext(DbContextOptions<WorkshopContext> options) : base(options) { }
-        public DbSet<Atendee> Atendees { get; set; }
+        public DbSet<Attendee> Attendees { get; set; }
     }
 }

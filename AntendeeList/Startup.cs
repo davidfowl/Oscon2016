@@ -11,7 +11,7 @@ namespace ConsoleApplication
         {
             services.AddDbContext<WorkshopContext>(options => options.UseInMemoryDatabase());
 
-            services.AddMvc();
+            services.AddMvc(options => options.OutputFormatters.Add(new VCardFormatter()));
         }
         
         public void Configure(IApplicationBuilder app)

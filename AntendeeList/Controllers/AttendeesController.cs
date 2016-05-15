@@ -7,31 +7,37 @@ using Microsoft.EntityFrameworkCore;
 namespace ConsoleApplication
 {
     [Route("/api/[controller]")]
-    public class AtendeesController : Controller
+    public class AttendeesController : Controller
     {
         private readonly WorkshopContext _context;
-        public AtendeesController(WorkshopContext context)
+        public AttendeesController(WorkshopContext context)
         {
             _context = context;
         }
 
         [HttpGet]
-        public Task<List<Atendee>> Get()
+        public Task<List<Attendee>> Get()
         {
-            return _context.Atendees.ToListAsync();
+            return _context.Attendees.ToListAsync();
+        }
+        
+        [HttpGet("{id:int}")]
+        public Task<Attendee> Get(int id)
+        {
+            return _context.Attendees.SingleOrDefaultAsync(a => a.Id == id);
         }
 
         [HttpPost]
-        public Task Post([FromBody]Atendee atendee)
+        public Task Post([FromBody]Attendee atendee)
         {
-            _context.Atendees.Add(atendee);
+            _context.Attendees.Add(atendee);
             return _context.SaveChangesAsync();
         }
         
         [HttpDelete("{id}")]
         public Task Delete(int id)
         {
-            var atendee = new Atendee
+            var atendee = new Attendee
             {
                 Id = id
             };
