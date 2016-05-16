@@ -61,6 +61,7 @@
 - Windows x86 SDK - http://go.microsoft.com/fwlink/?LinkID=798399
 - OS X SDK - http://go.microsoft.com/fwlink/?LinkID=798400
 - Debian SDK - http://go.microsoft.com/fwlink/?LinkID=798401
+- Visual Studio 2015 Tools Preview - https://download.microsoft.com/download/4/6/1/46116DFF-29F9-4FF8-94BF-F9BE05BE263B/DotNetCore.1.0.0.RC2-VS2015Tools.Preview1.exe
 - http://netlandingpage-dev.azurewebsites.net/net/
 - https://microsoft.com/net
 - https://docs.asp.net
