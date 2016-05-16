@@ -57,6 +57,9 @@
 1. Run the app from the USB key on another machine (e.g. on Windows)
 
 ## Links
+- Windows x64 SDK - http://go.microsoft.com/fwlink/?LinkID=798398
+- Windows x86 SDK - http://go.microsoft.com/fwlink/?LinkID=798399
+- OS X SDK - http://go.microsoft.com/fwlink/?LinkID=798400
 - https://microsoft.com/net
 - https://docs.asp.net
 - https://code.visualstudio.com
