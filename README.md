@@ -1,3 +1,5 @@
+# OSCON 2015 - Introduction to .NET Core & ASP.NET Core
+
 1. Acquire & install (Windows, OS X, VS, VS Code, etc.)
   1. .NET Core SDK
   1. VS Code
