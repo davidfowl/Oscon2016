@@ -23,5 +23,11 @@
         "portable-net451+win8"
       ]
     }
+  },
+  "publishOptions": {
+    "include": [ 
+      "wwwroot",
+      "appsettings.json"
+    ]
   }
 }
