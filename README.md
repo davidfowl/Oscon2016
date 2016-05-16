@@ -56,14 +56,16 @@
 1. Publish the app to a USB key (from OS X)
 1. Run the app from the USB key on another machine (e.g. on Windows)
 
+
 ## Links
-- Windows x64 SDK - http://go.microsoft.com/fwlink/?LinkID=798398
-- Windows x86 SDK - http://go.microsoft.com/fwlink/?LinkID=798399
-- OS X SDK - http://go.microsoft.com/fwlink/?LinkID=798400
-- Debian SDK - http://go.microsoft.com/fwlink/?LinkID=798401
-- C# Extensions for VS Code - https://github.com/OmniSharp/omnisharp-vscode/releases/download/v1.0.6-rc2/csharp-1.0.6-rc2.vsix
-- Visual Studio 2015 Tools Preview - https://download.microsoft.com/download/4/6/1/46116DFF-29F9-4FF8-94BF-F9BE05BE263B/DotNetCore.1.0.0.RC2-VS2015Tools.Preview1.exe
-- http://netlandingpage-dev.azurewebsites.net/net/
+- Download site: http://netlandingpage-dev.azurewebsites.net/net/
+- Direct download links
+  - Windows x64 SDK - http://go.microsoft.com/fwlink/?LinkID=798398
+  - Windows x86 SDK - http://go.microsoft.com/fwlink/?LinkID=798399
+  - OS X SDK - http://go.microsoft.com/fwlink/?LinkID=798400
+  - Debian SDK - http://go.microsoft.com/fwlink/?LinkID=798401
+  - C# Extensions for VS Code - https://github.com/OmniSharp/omnisharp-vscode/releases/download/v1.0.6-rc2/csharp-1.0.6-rc2.vsix
+  - Visual Studio 2015 Tools Preview - https://download.microsoft.com/download/4/6/1/46116DFF-29F9-4FF8-94BF-F9BE05BE263B/DotNetCore.1.0.0.RC2-VS2015Tools.Preview1.exe
 - https://microsoft.com/net
 - https://docs.asp.net
 - https://code.visualstudio.com
