@@ -60,6 +60,8 @@
 - Windows x64 SDK - http://go.microsoft.com/fwlink/?LinkID=798398
 - Windows x86 SDK - http://go.microsoft.com/fwlink/?LinkID=798399
 - OS X SDK - http://go.microsoft.com/fwlink/?LinkID=798400
+- Debian SDK - http://go.microsoft.com/fwlink/?LinkID=798401
+- http://netlandingpage-dev.azurewebsites.net/net/
 - https://microsoft.com/net
 - https://docs.asp.net
 - https://code.visualstudio.com
