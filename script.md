@@ -35,3 +35,18 @@
   - Use POSTMAN to call it, create record, then query it again
 - Use POSTMAN to use the API, create and see attendees
 - Let's add some UI to show and delete attendees
+  - Add a TypeScript file: wwwroot/app.ts
+  - Add a tsconfig.json to the root of the project
+  - Add a reference to the
+- Add a validation attribute to the model and see how it affects POST requests
+- Add some code to turn validation errors into 400 responses
+- Change to SQL Lite
+
+## To Add
+- Diagnostics page for Development environments
+- Configuration
+
+## Stretch goals
+- Dependency Injection
+- Using `dotnet watch` via `Microsoft.DotNet.Watcher.Tools`
+- Deploy to azure
