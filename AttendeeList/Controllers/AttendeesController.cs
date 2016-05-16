@@ -30,9 +30,14 @@ namespace AttendeeList
         [HttpPost]
         public async Task<IActionResult> Post([FromBody]Attendee atendee)
         {
+            if (!ModelState.IsValid)
+            {
+                return BadRequest(ModelState);
+            }
+            
             _context.Attendees.Add(atendee);
             await _context.SaveChangesAsync();
-            return CreatedAtAction("Get", new { id = atendee.Id }, atendee);
+            return CreatedAtAction(nameof(Get), new { id = atendee.Id }, atendee);
 
         }
         
