@@ -48,7 +48,7 @@
 1. Add a required attribute to the model
 1. Attempt to POST an invalid attendee and see the 500 response
 1. Add Diagnostics page middleware to show in Development environment to aid in debugging via response
-1. Set the environment to Development: `ASPNETCORE_ENVIRONMENT=true` env var
+1. Set the environment to Development: `ASPNETCORE_ENVIRONMENT=dev` env var
 1. Attempt to POST invalid attendee again and this time see error page
 1. Add some code to turn validation errors into 400 responses: `BadRequest(ModelState)`
 1. Preparing the app for deployment with `dotnet publish`
