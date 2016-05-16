@@ -6,6 +6,18 @@ var __awaiter = (this && this.__awaiter) || function (thisArg, _arguments, P, ge
         step((generator = generator.apply(thisArg, _arguments)).next());
     });
 };
+function getOs() {
+    return new Promise(resolve => {
+        var xhr = new XMLHttpRequest();
+        xhr.open('GET', '/api/platform', true);
+        xhr.send(null);
+        xhr.onreadystatechange = function (e) {
+            if (xhr.readyState === 4) {
+                resolve(xhr.responseText);
+            }
+        };
+    });
+}
 function getAttendees() {
     return new Promise(resolve => {
         var xhr = new XMLHttpRequest();
@@ -22,7 +34,10 @@ function getAttendees() {
 function init() {
     return __awaiter(this, void 0, void 0, function* () {
         var attendees = yield getAttendees();
+        var os = yield getOs();
+        var osEl = document.getElementById('os');
         var attendeesEl = document.getElementById('attendees');
+        osEl.innerText = os;
         for (var i = 0; i < attendees.length; ++i) {
             var li = document.createElement('li');
             li.innerText = attendees[i].FirstName + ' ' + attendees[i].LastName + ' (' + attendees[i].Company + ')';
