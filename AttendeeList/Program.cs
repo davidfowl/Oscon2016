@@ -2,7 +2,6 @@
 using System.IO;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
-using Microsoft.Extensions.Logging;
 
 namespace AttendeeList
 {
@@ -13,10 +12,6 @@ namespace AttendeeList
             var host = new WebHostBuilder()
                             .UseContentRoot(Directory.GetCurrentDirectory())
                             .UseKestrel()
-                            .ConfigureLogging(loggerFactory =>
-                            {
-                                loggerFactory.AddConsole(LogLevel.Debug);
-                            })
                             .UseStartup<Startup>()
                             .Build();
 
