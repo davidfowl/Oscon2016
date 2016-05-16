@@ -38,15 +38,21 @@
   - Add a TypeScript file: wwwroot/app.ts
   - Add a tsconfig.json to the root of the project
   - Add a reference to the
-- Add a validation attribute to the model and see how it affects POST requests
-- Add some code to turn validation errors into 400 responses
 - Change to SQL Lite
+- Set up configuration to flow the connection string to SQL Lite
+  - Read from appsettings.json
+  - Read from environment variables
+  - Demonstrate overriding the configuration value in the file from the environment variables
+- Add a required attribute to the model
+- Attempt to POST an invalid attendee and see the 500 response
+- Add Diagnostics page middleware to show in Development environment to aid in debugging via response
+- Set the environment to Development: `ASPNETCORE_ENVIRONMENT=true` env var
+- Attempt to POST invalid attendee again and this time see error page
+- Add some code to turn validation errors into 400 responses: `BadRequest(ModelState)`
+- Preparing the app for deployment with `dotnet publish`
 
-## To Add
-- Diagnostics page for Development environments
-- Configuration
-
-## Stretch goals
+## Extra topics if we have time
 - Dependency Injection
-- Using `dotnet watch` via `Microsoft.DotNet.Watcher.Tools`
+- Server-side rendering with Razor
+- Using `dotnet watch` via `Microsoft.DotNet.Watcher.Tools` (currently broken)
 - Deploy to azure
